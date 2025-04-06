@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastFox Csapat</title>
+    <style>
+        :root {
+            --narancs: #ff7f00;
+            --narancs-sotet: #cc6600;
+            --fekete: #111111;
+            --szurke: #333333;
+            --feher: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fekete);
+            color: var(--feher);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: var(--narancs);
+            width: 100%;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--feher);
+        }
+
+        main {
+            max-width: 800px;
+            padding: 2rem;
+            background-color: var(--szurke);
+            margin: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 127, 0, 0.4);
+        }
+
+        main h2 {
+            color: var(--narancs);
+        }
+
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .gombok {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .gombok a {
+            padding: 0.75rem 1.5rem;
+            background-color: var(--narancs);
+            color: var(--feher);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .gombok a:hover {
+            background-color: var(--narancs-sotet);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>FastFox</h1>
+</header>
+
+<main>
+    <h2>Bemutatkozás</h2>
+    <p>
+        Üdvözlünk a FastFox csapat oldalán!
+    </p>
+    <p>
+        Csapattagok:
+    </p>
+
+    <div class="gombok">
+        <a href="elso.html">Fekete Dániel</a>
+        <a href="masodik.html">Bancsics Eszter</a>
+        <a href="harmadik.html">Baracsi Fanni</a>
+        <a href="negyedik.html">Görög Ádám</a>
+        <a href="otodik.html">Nika Tímea</a>
+    </div>
+</main>
+
+<footer></footer>
+</body>
+</html>

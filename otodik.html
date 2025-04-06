@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <title>Görög Ádám - FastFox</title>
+    <style>
+        :root {
+            --narancs: #ff7f00;
+            --narancs-sotet: #cc6600;
+            --fekete: #111;
+            --szurke: #222;
+            --feher: #fff;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: var(--fekete);
+            color: var(--feher);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--narancs);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .kartya {
+            background-color: var(--szurke);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(255, 127, 0, 0.4);
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .kartya h2 {
+            color: var(--narancs);
+            margin-bottom: 1rem;
+        }
+
+        .kartya p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .kepek {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .kepek img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid var(--narancs);
+            transition: transform 0.3s ease;
+        }
+
+        .kepek img:hover {
+            transform: scale(1.08) rotate(-1deg);
+        }
+
+        .vissza {
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--narancs);
+            color: var(--feher);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .vissza:hover {
+            background-color: var(--narancs-sotet);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Csapattag bemutatkozás</h1>
+
+<div class="kartya">
+    <h2>Név: Nika Tímea</h2>
+    <p>
+        Hali, Timi vagyok. Elméletben gazdaságinformatikát tanulok, gyakorlatban pedig azt, hogyan ne zárjam ki magam a saját Google-fiókomból. Ha épp nem szakdogát halogatok, akkor valószínűleg egy Excel-táblázat fölött próbálom értelmezni az élet értelmét.
+    </p>
+
+    <div class="kepek">
+        <img src="img/timi.jpg">
+        <img src="img/timi2.jpg">
+    </div>
+</div>
+
+<a href="index.html" class="vissza">Vissza a főoldalra</a>
+
+</body>
+</html>
